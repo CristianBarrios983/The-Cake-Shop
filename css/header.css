@@ -41,6 +41,11 @@ ul > li{
     font-size: 1.5rem;
 }
 
+.cart:hover{
+    color: var(--Violet2);
+    cursor: pointer;
+}
+
 .section__main{
     height: 100vh;
     text-align: center;

@@ -11,12 +11,18 @@
 
 .images{
     width: 100%;
+    overflow: hidden;
 }
 
 .images > img{
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+.images > img:hover{
+    transform: scale(1.2);
+    transition: .8s;
 }
 
 .section2__more{
@@ -45,6 +51,16 @@
     align-items: center;
     flex-direction: column;
     padding: 2rem 0;
+}
+
+.service > i:hover{
+    color: var(--Violet2);
+    cursor:pointer;
+}
+
+.service > p:hover{
+    color: var(--Violet2);
+    cursor: pointer;
 }
 
 .service > i{
