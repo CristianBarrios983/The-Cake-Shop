@@ -1,0 +1,17 @@
+/* En typography.css */
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    /* ... */
+  }
+  
+  /* En layout.css */
+  @media (max-width: 1024px) {
+    /* Estilos para pantallas medianas */
+    /* ... */
+  }
+  
+  /* En components.css */
+  @media (max-width: 480px) {
+    /* Estilos para pantallas móviles */
+    /* ... */
+  }

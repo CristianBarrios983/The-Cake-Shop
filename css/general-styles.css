@@ -1,0 +1,16 @@
+:root{
+    --Whitesmoke: whitesmoke;
+    --Black: black;
+    --Gray: gray;
+    --Pink: pink;
+    --Violet: palevioletred;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
