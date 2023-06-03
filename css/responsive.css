@@ -1,7 +1,9 @@
-/* En typography.css */
+/* Estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
-    /* Estilos para pantallas más pequeñas */
-    /* ... */
+  .services .service:nth-child(2){
+    border-left: none;
+    border-right: none;
+}
   }
   
   /* En layout.css */
@@ -10,8 +12,120 @@
     /* ... */
   }
   
-  /* En components.css */
+  /* Estilos para pantallas móviles */
   @media (max-width: 480px) {
-    /* Estilos para pantallas móviles */
-    /* ... */
+      nav{
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5rem;
+    }
+    
+    .nav__links{
+       display: none;
+    }
+    
+    .logo{
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'Cherry Bomb One', cursive;
+    }
+    
+    .section__title{
+        font-size: 3rem;
+    }
+    
+    .section__buttom{
+        width: 190px;
+        height: 60px;
+    }
+
+
+    .section1__title{
+        font-size: 1.3rem;
+    }
+    
+    .section1__paragraph{
+        font-size: 1.1rem;
+    }
+    
+    .cards{
+        grid-gap: 50px;
+        place-items: center;
+        padding: 0;
+    }
+    
+    .card__img{
+        width: 80%;
+        height: 300px;
+    }
+    
+    .buttom{
+        margin-top: 1.5rem;
+    }
+    
+    .section1__buttom{
+        width: 190px;
+        height: 55px;
+    }
+
+
+    .section2{
+      padding: 2rem 0;
+  }
+    
+    .images{
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .section2__more{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .services .service:nth-child(2){
+        border-left: none;
+        border-right: none;
+    }
+    
+    .service > i{
+        font-size: 2.5rem;
+    }
+    
+    .service__description{
+        font-size: 1.1rem;
+    }
+
+
+    footer{
+      grid-gap: 35px;
+    }
+    
+    .principal{
+        margin-bottom: 1rem;
+    }
+    
+    .links__content{
+        gap: .3rem;
+    }
+
+    .links__content > a{
+      font-weight: 500;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+    }
+    
+    .form__input{
+        height: 45px;
+        font-size: .9rem;
+    }
+    
+    .form__btn{
+        height: 42px;
+        font-size: .9rem;
+    }
   }

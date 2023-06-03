@@ -54,4 +54,5 @@ form{
 
 .form__btn:hover{
     background-color: var(--Violet2);
+    transition: .5s;
 }
