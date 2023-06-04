@@ -1,17 +1,210 @@
-/* En typography.css */
-@media (max-width: 768px) {
-    /* Estilos para pantallas más pequeñas */
-    /* ... */
-  }
-  
-  /* En layout.css */
-  @media (max-width: 1024px) {
+  @media (max-width: 1187px) {
     /* Estilos para pantallas medianas */
-    /* ... */
+    .services .service:nth-child(2){
+        border-left: none;
+        border-right: none;
+    }
+  }
+
+  @media (max-width: 915px){
+    footer{
+        grid-gap: 30px;
+    }
+  }
+
+  @media (max-width:615px){
+    .nav__links{
+        display: none;
+    }
+
+    .open-menu{
+        display: block;
+    }
+
+    .close-menu{
+        margin-bottom: 20px;
+    }
+
+    .open-menu, .close-menu{
+        border: none;
+        font-size: 1.6rem;
+        background-color: var(--Whitesmoke);
+        cursor: pointer;
+    }
+    
+    .nav__links__responsive{
+        opacity: 0;
+        visibility: hidden;
+       position: fixed;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       display: flex;
+       flex-direction: column;
+       gap: 15px;
+       background-color: var(--Whitesmoke);
+       padding: 3.5rem;
+       box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+       z-index: 2;
+       transition: .7s;
+    }
+
+    .nav__links__responsive > li:hover{
+        cursor: pointer;
+        color: var(--Violet2);
+    }
+    
+    .nav__visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .section__title{
+        font-size: 4rem;
+    }
+
+    .section2{
+        padding: 2rem 0;
+    }
+      
+    .images{
+        width: 100%;
+        overflow: hidden;
+    }
+      
+    .section2__more{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+      
+    .services .service:nth-child(2){
+        border-left: none;
+        border-right: none;
+    }
+      
+    .service > i{
+        font-size: 2.5rem;
+    }
+      
+    .service__description{
+        font-size: 1.1rem;
+    }
+
+    footer{
+        grid-gap: 35px;
+      }
   }
   
-  /* En components.css */
+  /* Estilos para pantallas móviles */
   @media (max-width: 480px) {
-    /* Estilos para pantallas móviles */
-    /* ... */
+    /*Menu responsive*/
+      nav{
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1.5rem;
+    }
+    
+    .logo{
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: 'Cherry Bomb One', cursive;
+    }
+    
+    .section__title{
+        font-size: 3rem;
+    }
+    
+    .section__buttom{
+        width: 190px;
+        height: 60px;
+    }
+
+    .section1__title{
+        font-size: 1.3rem;
+    }
+    
+    .section1__paragraph{
+        font-size: 1.1rem;
+    }
+    
+    .cards{
+        grid-gap: 50px;
+        place-items: center;
+        padding: 0;
+    }
+    
+    .card__img{
+        width: 80%;
+        height: 300px;
+    }
+    
+    .buttom{
+        margin-top: 1.5rem;
+    }
+    
+    .section1__buttom{
+        width: 190px;
+        height: 55px;
+    }
+
+
+    .section2{
+      padding: 2rem 0;
+  }
+    
+    .images{
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .section2__more{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .services .service:nth-child(2){
+        border-left: none;
+        border-right: none;
+    }
+    
+    .service > i{
+        font-size: 2.5rem;
+    }
+    
+    .service__description{
+        font-size: 1.1rem;
+    }
+
+
+    footer{
+      grid-gap: 35px;
+    }
+    
+    .principal{
+        margin-bottom: 1rem;
+    }
+    
+    .links__content{
+        gap: .3rem;
+    }
+
+    .links__content > a{
+      font-weight: 500;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+    }
+    
+    .form__input{
+        height: 45px;
+        font-size: .9rem;
+    }
+    
+    .form__btn{
+        height: 42px;
+        font-size: .9rem;
+    }
   }

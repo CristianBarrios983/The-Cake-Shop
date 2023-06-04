@@ -16,6 +16,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 65px;
+    place-items: center;
 
     padding: 0 5.5rem;
 }
@@ -31,6 +32,11 @@
 .card__img{
     width: 100%;
     height: 350px;
+    overflow: hidden;
+}
+
+.card__img:hover{
+    cursor:pointer;
 }
 
 .card__img > img{
@@ -38,6 +44,11 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.card__img > img:hover{
+    transform: scale(1.2);
+    transition: .8s;
 }
 
 .product__name{
@@ -77,6 +88,7 @@
 .section1__buttom:hover{
     color: var(--Whitesmoke);
     background-color: var(--Black);
+    transition: .5s;
 }
 
 .line {

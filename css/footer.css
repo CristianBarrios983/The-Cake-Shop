@@ -1,3 +1,57 @@
 footer{
     background-color: var(--Pink);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.principal{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.links__content{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.links__content > a{
+    text-decoration: none;
+    color: var(--Black);
+}
+
+.links__content >a:hover{
+    color:blueviolet;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.form__input{
+    height: 50px;
+    text-align: center;
+    color: var(--Gray);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form__btn{
+    height: 45px;
+    color: var(--Whitesmoke);
+    background-color: var(--Violet);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form__btn:hover{
+    background-color: var(--Violet2);
+    transition: .5s;
 }

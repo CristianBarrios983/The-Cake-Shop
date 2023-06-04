@@ -12,6 +12,7 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/general-styles.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section-main.css">
     <link rel="stylesheet" href="css/section1.css">
     <link rel="stylesheet" href="css/section2.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -33,12 +34,23 @@
                 <li class="nav__link">Instagram</li>
                 <li class="cart"><i class="fa-solid fa-cart-shopping"></i></li>
             </ul>
+            <ul class="nav__links__responsive" id="nav__responsive">
+                <button class="close-menu" id="close"><i class="fa-solid fa-xmark"></i></button>
+                <li class="nav__link">Home</li>
+                <li class="nav__link">Shop</li>
+                <li class="nav__link">Contact</li>
+                <li class="nav__link">Youtube</li>
+                <li class="nav__link">Instagram</li>
+                <li class="cart"><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+            <button class="open-menu" id="open"><i class="fa-solid fa-bars"></i></button>
         </nav>
-        <div class="section__main">
-            <h1 class="section__title">Homemade Sweets</h1>
-            <button class="section__buttom">Shop Now</button>
-        </div>
     </header>
+
+    <section class="section__main">
+        <h1 class="section__title">Homemade Sweets</h1>
+        <button class="section__buttom">Shop Now</button>
+    </section>
     <section class="section1">
         <h1 class="section1__title">Best Sellers</h1>
         <p class="section1__paragraph">Description. Empty paragraph for your text</p>
@@ -111,30 +123,38 @@
     <footer>
         <div class="links">
             <p class="principal">Shop</p>
-            <a href="#">ABOUT</a>
-            <a href="#">FaQ</a>
-            <a href="#">Store Policy</a>
-            <a href="#">Contact Me</a>
+            <div class="links__content">
+                <a href="#">ABOUT</a>
+                <a href="#">FaQ</a>
+                <a href="#">Store Policy</a>
+                <a href="#">Contact Me</a>
+            </div>
         </div>
         <div class="links">
             <p class="principal">Opening Hours</p>
-            <a href="#">Mon-Fri 9:00 - 18:00</a>
-            <a href="#">Saturday 9:00 - 17:00</a>
-            <a href="#">Sunday 11:00 - 17:00</a>
+            <div class="links__content">
+                <a href="#">Mon-Fri 9:00 - 18:00</a>
+                <a href="#">Saturday 9:00 - 17:00</a>
+                <a href="#">Sunday 11:00 - 17:00</a>
+            </div>
         </div>
         <div class="links">
             <p class="principal">Adresses</p>
-            <a href="#">Winchester House</a>
-            <a href="#">Zanotto's Willow Market</a>
-            <a href="#">Ymco-Hacienda Valley</a>
+            <div class="links__content">
+                <a href="#">Winchester House</a>
+                <a href="#">Zanotto's Willow Market</a>
+                <a href="#">Ymco-Hacienda Valley</a>
+            </div>
         </div>
         <form>
-            <input type="email" placeholder="Email Adress">
-            <input type="submit" value="Subscribe Now">
+            <input type="email" placeholder="Email Adress" class="form__input">
+            <input type="submit" value="Subscribe Now" class="form__btn">
         </form>
     </footer>
 
-
+    <!-- Navbar Responsive -->
+    <script src="js/nav.js"></script>
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/45fc83ca5a.js" crossorigin="anonymous"></script>
 </body>
 </html>
